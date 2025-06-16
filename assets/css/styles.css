@@ -13,7 +13,7 @@
     --dark-color: #252525;
     --primary-color: #35124b;
     --secondary-color: #a280b0;
-    --light-pink-color: #faf4f5;
+    --light-pink-color: #e6daef;
     --medium-gray-color: #ccc;
 
     /* Font size */
@@ -39,7 +39,7 @@
     --site-max-width: 1300px;
 }
 
-/* Stylings for whole sie */
+/* Stylings for whole site */
 
 ul{
     list-style: none;
@@ -65,6 +65,24 @@ img {
     padding: 0 20px;
     max-width: var(--site-max-width);
 }
+
+.section-title {
+    text-align: center;
+    padding: 60px 0 100px;
+    text-transform: uppercase;
+    font-size: var(--font-size-l);
+}
+
+.section-title::after {
+    content: "";
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 10px auto;
+    border-radius: var(--border-radius-s);
+    background: var(--secondary-color);
+}
+
 
 /* Navbar styling */
 
@@ -182,10 +200,309 @@ header .navbar {
     height: auto;
 }
 
+/* About section stylist */
+.about-section {
+    padding: 120px 0;
+    background: var(--light-pink-color);
+}
 
+.about-section .section-content{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-section .about-image-wrapper .about-image{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: var(--border-radius-circle);
+}
+
+.about-section .about-details .section-title {
+    padding: 0;
+}
+
+.about-section .about-details {
+    max-width: 50%;
+}
+
+.about-section .about-details .text {
+    line-height: 30px;
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: var(--font-size-m);
+}
+
+.about-section .social-link-list {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+
+} 
+
+.about-section .social-link-list .social-link {
+    color: var(--primary-color);
+    font-size: var(--font-size-l);
+    transition: 0.2s ease;
+}
+
+.about-section .social-link-list .social-link:hover {
+    color: var(--secondary-color);
+}
+
+/* Menu de Investimentos section styling */
+
+/* Pensar em tirar ------------------------------------------------------------- */
+.menu-section {
+    color: var(--dark-color);
+    background: color white;
+    padding: 50px 0 100px;
+}
+
+.menu-section .menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 110px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-section .menu-list .menu-item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% / 3 - 110px);
+}
+
+.menu-section .menu-list .menu-item .menu-image {
+    max-width: 83%;
+    aspect-ratio: 1;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.menu-section .menu-list .menu-item .name {
+    margin: 12px 0;
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-semibold);
+}
+
+.menu-section .menu-list .menu-item .text {
+    font-size: var(--font-size-m);
+}
+
+/* Testimonial section styling */
+.testimonials-section {
+    padding: 50px 0 100px;
+    color: white;
+    background: var(--dark-color);
+}
+
+.testimonials-section .slider-wrapper {
+    overflow: hidden;
+    margin: 0 60px 50px;
+}
+
+.testimonials-section .testimonials {
+    display: flex;
+    padding: 35px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials-section .testimonials .user-image {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 50px;
+    object-fit: cover;
+    border-radius: var(--border-radius-circle);
+}
+
+.testimonials-section .testimonials .name {
+    margin-bottom: 16px;
+    font-size: var(--font-size-m);
+}
+
+.testimonials-section .testimonials .feedback {
+    line-height: 25px;
+}
+
+.testimonials-section .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    background: var(--secondary-color);
+}
+
+.testimonials-section .swiper-slide-button {
+    margin-top: -50px;
+    color: var(--secondary-color);
+    transition: 0.3s ease;
+}
+
+.testimonials-section .swiper-slide-button:hover {
+    color: var(--primary-color);
+}
+
+/* Ferramentas/Gallery styling*/
+.gallery-section {
+    padding: 50px 0 100px;
+}
+
+.gallery-section .gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.gallery-section .gallery-list .gallery-item {
+    overflow: hidden;
+    border-radius: var(--border-radius-s);
+    width: calc(100%/ 3 - 32px);
+}
+
+.gallery-section .gallery-item .gallery-image {
+    width: 100%;
+    height: 100%;
+    cursor: zoom-in;
+    transition: 0.3s ease;
+}
+
+.gallery-section .gallery-item:hover .gallery-image {
+    transform: scale(1.1);
+}
+
+.gallery-section {
+    color: white;
+    background: #613b70;
+    }
+
+.gallery-section .gallery-list {
+    gap: 30px;
+}
+
+/* Login/Cadastro styling*/
+.footer-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--primary-color);
+}
+
+.wrapper {
+    width: 420px;
+    background: #2e0e43;
+    color: var(--white-color);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid var(--white-color);
+    border-radius: 40px;
+    font-size: 16px;
+    color: var(--white-color);
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: var(--white-color);
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: var(--white-color);
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: var(--white-color);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px var(--dark-color);
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive media query code for max width 1024px */
+@media screen and (max-width: 1024px) {
+    .menu-section .menu-list{
+        gap: 60px;
+    }
+
+    .menu-section .menu-list .menu-item {
+        width: calc(100% / 3 - 110px);
+    }
+}
 
 /* Responsive media query code for max width 900px */
-@media screen and (max-width: 900px){
+    @media screen and (max-width: 900px){
     :root {
     --font-size-m: 1rem;
     --font-size-l: 1.3rem;
@@ -253,7 +570,7 @@ header .navbar {
         justify-content: center;
     }
 
-    .hero-section .hero-details :is(.subtitle, .description) {
+    .hero-section .hero-details :is(.subtitle, .description), .about-section .about-details {
         max-width: 100%;
     }
 
@@ -264,5 +581,51 @@ header .navbar {
     .hero-section .hero-image-wrapper {
         max-width: 270px;
         margin-right: 0;
+    }
+
+    .about-section .section-content {
+        gap: 70px;
+        flex-direction: column;
+    }
+
+    .about-section .about-image-wrapper .about-image {
+        width: 100%;
+        height: 100%;
+        max-width: 250px;
+        aspect-ratio: 1;
+    }
+
+    .menu-section .menu-list {
+        gap: 60px;
+    }
+
+    .menu-section .menu-list .menu-item {
+        width: calc(100% / 2 - 30px);
+    }
+
+    .menu-section .menu-list .menu-item .menu-image {
+        max-width: 200px;
+    }
+
+    .gallery-section .gallery-list .gallery-item {
+        width: calc(100% / 2 - 30px);
+    }
+}
+
+/* Responsive media query code for max width 640px */
+@media screen and (max-width: 640px) {
+    .menu-section .menu-list {
+        gap: 60px;
+    }
+    .menu-section .menu-list .menu-item, .gallery-section .gallery-list .gallery-item {
+        width: 100%;
+    }
+
+    .testimonials-section .slider-wrapper {
+        margin: 0 0 30px;
+    }
+
+    .testimonials-section .swiper-slide-button {
+        display: none;
     }
 }

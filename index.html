@@ -12,10 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <!-- Linkar Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
     <!-- Linkar a CSS com o HTML-->
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
-<body>  
+<main>  
 
 <!-- HEADER / Navbar -->
     <header>
@@ -77,17 +80,193 @@
                 </div>
 
                 <div class="hero-image-wrapper">
-                    <img src="./assets/images/icon-principal-Photoroom.png" alt="Hero" class="hero-image">
+                    <img src="./assets/images/fintechs-removebg-preview.png" alt="Hero" class="hero-image">
                 </div>
 
             </div>
         </section>
-    </main>
 
-<!-- Sobre nós section video: 26:00-->
+<!-- Sobre nós section-->
+    <section class="about-section">
+        <div class="section-content">
+            <div class="about-image-wrapper">
+                <img src="/assets/images/Saude-financeira-para-TI-Potencialize-com-a-PME.jpg" alt="About" class="about-image">
+            </div>
+            <div class="about-details">
+                <h2 class="section-title">Quem é a Guardiã?</h2>
+                <p class="text">A Guardiã é uma fintech feita para quem quer segurança e praticidade na gestão das finanças pessoais e profissionais. Com inteligência artificial, consultoria personalizada e ferramentas de planejamento, você tem tudo para crescer com controle.</p>
+                <div class="social-link-list">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Investimentos (menu) section-->
+    <section class="menu-section">
+        <h2 class="section-title">Descubra o tipo de investimento ideal para você:</h2>
+        <div class="section-content">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <img src="assets/images/renda fixa.jpg" alt="Renda Fixa" class="menu-image">
+                    <h3 class="name">Renda Fixa</h3>
+                    <p class="text">São investimentos onde o investidor empresta dinheiro a uma instituição (governo, banco ou empresa) em troca de uma remuneração futura, geralmente com juros.</p>
+                </li>
+
+                <li class="menu-item">
+                    <img src="assets/images/imobiliario.avif" alt="Fundos Imobiliários" class="menu-image">
+                    <h3 class="name">Fundos Imobiliários</h3>
+                    <p class="text">Permitem investir em empreendimentos imobiliários, como shoppings ou prédios comerciais, de forma coletiva, recebendo aluguéis e valorização das cotas.</p>
+                </li>
+                <li class="menu-item">
+                    <img src="assets/images/tesourodireto.avif" alt="Tesouro Direto" class="menu-image">
+                    <h3 class="name">Tesouro Direto</h3>
+                    <p class="text">É a compra de títulos públicos federais, uma forma de emprestar dinheiro ao governo e receber juros por isso.</p>
+                </li>
+                <li class="menu-item">
+                    <img src="assets/images/criptomoedaeditado.jpg" alt="Criptomoedas" class="menu-image">
+                    <h3 class="name">Criptomoedas</h3>
+                    <p class="text">Ativos digitais descentralizados baseados em criptografia, como Bitcoin e Ethereum, que operam fora do controle de bancos ou governos.</p>
+                </li>
+                <li class="menu-item">
+                    <img src="assets/images/previdencia privada.avif" alt="Previdência Privada" class="menu-image">
+                    <h3 class="name">Previdência Privada</h3>
+                    <p class="text">Um tipo de investimento de longo prazo focado em acumular recursos para a aposentadoria ou outros objetivos futuros, com benefícios fiscais.</p>
+                </li>
+                <li class="menu-item">
+                    <img src="assets/images/simulador de risco.jpg" alt="Simulador de Risco" class="menu-image">
+                    <h3 class="name">Simulador de Risco</h3>
+                    <p class="text">Uma ferramenta que ajuda o investidor a entender seu perfil de risco e a adequação de diferentes investimentos aos seus objetivos.</p>
+                </li>
+                
 
 
-<!-- (lembrar) JS só leu pois precisava procurar pela pasta js > script.js -->
-<script src="js/script.js"></script>
+            </ul>
+        </div>
+    </section>
+
+<!-- Consultores e IAs (testimonials) section-->
+    <section class="testimonials-section">
+        <h2 class="section-title">Com quem você pode contar:</h2>
+        <div class="section-content">
+            <div class="slider-content swiper">
+                <div class="slider-wrapper">
+                    <ul class="testimonials-list swiper-wrapper">
+                        <li class="testimonials swiper-slide">
+                            <img src="./assets/images/personas mulher 1.webp" alt="User" class="user-image">
+                            <h3 class="name">Ana Paula</h3>
+                            <i class="feedback">Orienta sobre as melhores estratégias em Renda Fixa, focando em segurança e previsibilidade para seus clientes.</i>
+                        </li>
+
+                        <li class="testimonials swiper-slide">
+                            <img src="./assets/images/persona homem 1.jpg" alt="User" class="user-image">
+                            <h3 class="name">Bruno Costa</h3>
+                            <i class="feedback">Bruno Costa: Ajuda clientes a definirem seus objetivos financeiros e a escolherem os melhores Fundos Imobiliários para suas carteiras.</i>
+                        </li>
+
+                        <li class="testimonials swiper-slide">
+                            <img src="./assets/images/persona mulher 2.jpg" alt="User" class="user-image">
+                            <h3 class="name">Carla Mendes</h3>
+                            <i class="feedback">Oferece análises aprofundadas do mercado e recomendações personalizadas em Tesouro Direto, otimizando a rentabilidade dos títulos.</i>
+                        </li>
+
+                        <li class="testimonials swiper-slide">
+                            <img src="./assets/images/persona homem 2.jpg" alt="User" class="user-image">
+                            <h3 class="name">Daniel Oliveira</h3>
+                            <i class="feedback">Presta consultoria sobre planejamento financeiro de longo prazo, com expertise em soluções de Previdência Privada.</i>
+                        </li>
+
+                        <li class="testimonials swiper-slide">
+                            <img src="./assets/images/persona mulher 3.jpg" alt="User" class="user-image">
+                            <h3 class="name">Elisa Souza</h3>
+                            <i class="feedback">Desenvolve planos de investimento customizados para clientes de alta renda, com forte afinidade por Criptomoedas e outros ativos de alto risco.</i>
+                        </li>
+
+                        <li class="testimonials swiper-slide">
+                            <img src="./assets/images/persona AI.jpg" alt="User" class="user-image">
+                            <h3 class="name">Téia (IA)</h3>
+                            <i class="feedback">Fornece análises de mercado em tempo real, projeta cenários futuros e sugere oportunidades de investimento personalizadas, com base na afinidade de cada cliente por qualquer tipo de ativo, desde Renda Fixa até Criptomoedas.</i>
+                        </li>
+                    </ul>
+                    
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<!-- Ferramentas/breve explicação (gallery) section-->
+    <section class="gallery-section">
+        <h2 class="section-title">Ferramentas que facilitam sua vida:</h2>
+        <div class="section-content">
+            <ul class="gallery-list">
+                <li class="gallery-item">
+                    <img src="./assets/images/1.png" alt="Gallery" class="gallery-image">
+                </li>
+
+                <li class="gallery-item">
+                    <img src="./assets/images/2.png" alt="Gallery" class="gallery-image">
+                </li>
+                <li class="gallery-item">
+                    <img src="./assets/images/3.png" alt="Gallery" class="gallery-image">
+                </li>
+                <li class="gallery-item">
+                    <img src="./assets/images/4.png" alt="Gallery" class="gallery-image">
+                </li>
+                <li class="gallery-item">
+                    <img src="./assets/images/5.png" alt="Gallery" class="gallery-image">
+                </li>
+                <li class="gallery-item">
+                    <img src="./assets/images/6.png" alt="Gallery" class="gallery-image">
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<!-- Login/Cadastro section-->
+    <footer class="footer-section">
+        <div class="wrapper">
+            <form action="">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
+                    <i class="fa-solid fa-circle-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Lembre-se de mim</label>
+                    <a href="#">Esqueci da minha senha</a>
+                </div>
+
+                <button type="submit" class="btn">Login</button>
+
+                <div class="register-link">
+                    <p>Não tem uma conta ainda? <a href="#">Cadastre-se</a></p>
+                </div>
+            </form>
+        </div>
+    </footer>
+
+<!-- Linkar Swiper script-->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- (lembrar) JS só leu pois precisava procurar pela pasta > script.js -->
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
